@@ -19,7 +19,7 @@ jobs:
           cmake --build ./build
 
       - name: Testing banking
-        run: ./build/banking_lib_test
+        run: build/banking_lib_test
 
   build_windows:
     runs-on: windows-latest
@@ -33,4 +33,4 @@ jobs:
           cmake --build ./build
 
       - name: Testing banking
-        run: ./build/banking_lib_test
+        run: build/banking_lib_test

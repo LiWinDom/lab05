@@ -38,8 +38,8 @@ bool Transaction::Make(Account& from, Account& to, int sum) {
 
   bool success = Debit(from, sum + fee_);
   if (!success) to.ChangeBalance(-sum);
+  else SaveToDataBase(from, to, sum);
 
-  SaveToDataBase(from, to, sum);
   return success;
 }
 

@@ -7,7 +7,7 @@ set(CMAKE_CXX_STANDARD 17)
 set(CMAKE_CXX_STANDARD_REQUIRED ON)
 
 add_library(${PROJECT_NAME} STATIC Account.h Account.cpp Transaction.h Transaction.cpp)
-
+set(CMAKE_CXX_FLAGS --coverage)
 
 # Testing
 set(TEST_PROJECT_NAME banking_lib_test)
@@ -23,7 +23,7 @@ FetchContent_MakeAvailable(googletest)
 
 enable_testing()
 
-add_executable(${TEST_PROJECT_NAME} ./tests/MockAccount.h ./tests/MockTransaction.h tests/banking.cc ${GMOCK_TESTS_SOURCE_FILES})
+add_executable(${TEST_PROJECT_NAME} ./tests/MockAccount.h ./tests/MockTransaction.h ./tests/banking.cc ${GMOCK_TESTS_SOURCE_FILES})
 target_link_libraries(${TEST_PROJECT_NAME} GTest::gtest_main gmock_main)
 
 include(GoogleTest)

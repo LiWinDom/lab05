@@ -25,7 +25,7 @@ jobs:
       - name: Do lcov stuff
         run: |
           sudo apt install -y lcov
-          lcov -c -d ./banking/build/CMakeFiles/banking.dir/banking/ --include *.cpp --output-file ./coverage/lcov.info
+          lcov -c --directory ./banking/ --output-file coverage.info
 
       - name: Coveralls GitHub Action
         uses: coverallsapp/github-action@v2.3.0

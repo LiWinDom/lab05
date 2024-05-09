@@ -149,3 +149,14 @@ Running main() from /Users/LiWinDom/Documents/Code/timp/lab05/banking/cmake-buil
 ```
 
 3. Настройте сборочную процедуру на Github Actions
+```shell
+$ cd ..
+```
+
+```shell
+$ mkdir -p ./github/workflows
+```
+
+```shell
+$ touch ./github/workflows/CI.yml
+```

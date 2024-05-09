@@ -4,7 +4,7 @@
 # compile CXX with /Library/Developer/CommandLineTools/usr/bin/c++
 CXX_DEFINES = 
 
-CXX_INCLUDES = -isystem /Users/LiWinDom/Documents/Code/timp/lab05/banking/cmake-build/_deps/googletest-src/googletest/include -isystem /Users/LiWinDom/Documents/Code/timp/lab05/banking/cmake-build/_deps/googletest-src/googletest
+CXX_INCLUDES = -isystem /Users/LiWinDom/Documents/Code/timp/lab05/banking/cmake-build/_deps/googletest-src/googletest/include -isystem /Users/LiWinDom/Documents/Code/timp/lab05/banking/cmake-build/_deps/googletest-src/googletest -isystem /Users/LiWinDom/Documents/Code/timp/lab05/banking/cmake-build/_deps/googletest-src/googlemock/include -isystem /Users/LiWinDom/Documents/Code/timp/lab05/banking/cmake-build/_deps/googletest-src/googlemock
 
 CXX_FLAGS = -std=gnu++17 -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX14.4.sdk
 

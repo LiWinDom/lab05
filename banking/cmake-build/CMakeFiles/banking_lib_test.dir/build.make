@@ -109,6 +109,8 @@ banking_lib_test: CMakeFiles/banking_lib_test.dir/tests/Account.cc.o
 banking_lib_test: CMakeFiles/banking_lib_test.dir/tests/Transaction.cc.o
 banking_lib_test: CMakeFiles/banking_lib_test.dir/build.make
 banking_lib_test: lib/libgtest_main.a
+banking_lib_test: lib/libgmock_main.a
+banking_lib_test: lib/libgmock.a
 banking_lib_test: lib/libgtest.a
 banking_lib_test: CMakeFiles/banking_lib_test.dir/link.txt
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --bold --progress-dir=/Users/LiWinDom/Documents/Code/timp/lab05/banking/cmake-build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Linking CXX executable banking_lib_test"

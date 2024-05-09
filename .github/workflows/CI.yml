@@ -21,18 +21,3 @@ jobs:
       - name: Testing banking
         working-directory: ./banking/build/
         run: ./banking_lib_test
-
-  build_windows:
-    runs-on: windows-latest
-    steps:
-      - uses: actions/checkout@v3
-
-      - name: Configure and build banking
-        working-directory: ./banking/
-        run: |
-          cmake -S ./ -B ./build
-          cmake --build ./build
-
-      - name: Testing banking
-        working-directory: ./banking/build/
-        run: ./banking_lib_test

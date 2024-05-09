@@ -21,3 +21,6 @@ jobs:
       - name: Testing banking
         working-directory: ./banking/build/
         run: ./banking_lib_test
+
+      - name: Coveralls
+        uses: coverallsapp/github-action@v2

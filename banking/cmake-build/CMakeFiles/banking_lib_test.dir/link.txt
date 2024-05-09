@@ -1,1 +1,0 @@
-/Library/Developer/CommandLineTools/usr/bin/c++  -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX14.4.sdk -Wl,-search_paths_first -Wl,-headerpad_max_install_names CMakeFiles/banking_lib_test.dir/tests/banking.cc.o -o banking_lib_test  lib/libgtest_main.a lib/libgmock_main.a lib/libgmock.a lib/libgtest.a 

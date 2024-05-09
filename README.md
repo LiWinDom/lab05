@@ -111,5 +111,41 @@ $ cmake --build cmake-build
 ```
 
 ```shell
-./cmake-build/banking_lib_test
+$ ./cmake-build/banking_lib_test
 ```
+```shell
+Running main() from /Users/LiWinDom/Documents/Code/timp/lab05/banking/cmake-build/_deps/googletest-src/googletest/src/gtest_main.cc
+[==========] Running 10 tests from 2 test suites.
+[----------] Global test environment set-up.
+[----------] 6 tests from Account
+[ RUN      ] Account.Mock
+[       OK ] Account.Mock (0 ms)
+[ RUN      ] Account.Init
+[       OK ] Account.Init (0 ms)
+[ RUN      ] Account.GetBalance
+[       OK ] Account.GetBalance (0 ms)
+[ RUN      ] Account.ChangeBalance
+[       OK ] Account.ChangeBalance (0 ms)
+[ RUN      ] Account.Lock
+[       OK ] Account.Lock (0 ms)
+[ RUN      ] Account.Unlock
+[       OK ] Account.Unlock (0 ms)
+[----------] 6 tests from Account (0 ms total)
+
+[----------] 4 tests from Transaction
+[ RUN      ] Transaction.Mock
+[       OK ] Transaction.Mock (0 ms)
+[ RUN      ] Transaction.Init
+[       OK ] Transaction.Init (0 ms)
+[ RUN      ] Transaction.Make
+[       OK ] Transaction.Make (0 ms)
+[ RUN      ] Transaction.SaveToDataBase
+[       OK ] Transaction.SaveToDataBase (0 ms)
+[----------] 4 tests from Transaction (0 ms total)
+
+[----------] Global test environment tear-down
+[==========] 10 tests from 2 test suites ran. (1 ms total)
+[  PASSED  ] 10 tests.
+```
+
+3. Настройте сборочную процедуру на Github Actions

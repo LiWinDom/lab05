@@ -1,0 +1,36 @@
+name: CMake
+
+on:
+  push:
+    branches: [master]
+  pull_request:
+    branches: [master]
+
+jobs:
+  build_linux:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v3
+
+      - name: Configure banking
+        run: cmake ${{github.workspace}}/banking/ -B ${{github.workspace}}/banking/build/
+
+      - name: Build banking
+        run: cmake --build ${{github.workspace}}/banking/build/
+
+      - name: Testing banking
+        run: cmake --build ${{github.workspace}}/banking/build/banking_lib_test
+
+  build_windows:
+    runs-on: windows-latest
+    steps:
+      - uses: actions/checkout@v3
+
+      - name: Configure banking
+        run: cmake ${{github.workspace}}/banking/ -B ${{github.workspace}}/banking/build/
+
+      - name: Build banking
+        run: cmake --build ${{github.workspace}}/banking/build/
+
+      - name: Testing banking
+        run: cmake --build ${{github.workspace}}/banking/build/banking_lib_test

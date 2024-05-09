@@ -15,7 +15,7 @@ jobs:
       - name: Configure and build banking
         run: |
           cd ./banking
-          cmake -S ./ -B ./build
+          cmake -S ./ -B ./build -DBUILD_TESTS=ON
           cmake --build ./build
 
       - name: Testing banking
@@ -29,7 +29,7 @@ jobs:
       - name: Configure and build banking
         run: |
           cd ./banking
-          cmake -S ./ -B ./build
+          cmake -S ./ -B ./build -DBUILD_TESTS=ON
           cmake --build ./build
 
       - name: Testing banking

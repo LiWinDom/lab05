@@ -1,0 +1,5 @@
+if(EXISTS "/Users/LiWinDom/Documents/Code/timp/lab05/banking/cmake-build/banking_lib_test[1]_tests.cmake")
+  include("/Users/LiWinDom/Documents/Code/timp/lab05/banking/cmake-build/banking_lib_test[1]_tests.cmake")
+else()
+  add_test(banking_lib_test_NOT_BUILT banking_lib_test_NOT_BUILT)
+endif()

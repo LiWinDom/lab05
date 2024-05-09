@@ -1,4 +1,4 @@
-name: CMake
+name: Banking library
 
 on:
   push:
@@ -30,9 +30,9 @@ jobs:
       - name: Configure and build banking
         working-directory: ./banking/
         run: |
-          cmake -S ./ -B ./build -DBUILD_TESTS=ON
+          cmake -S ./ -B ./build
           cmake --build ./build
 
       - name: Testing banking
         working-directory: ./banking/build/
-        run: build/banking_lib_test
+        run: ./banking_lib_test

@@ -96,3 +96,20 @@ $ cmake --build cmake-build
 ```
 
 2. Создайте модульные тесты на классы Transaction и Account. 
+```shell
+$ cmake --build cmake-build
+```
+```shell
+[ 23%] Built target banking_lib
+[ 38%] Built target gtest
+[ 53%] Built target gtest_main
+[ 69%] Built target gmock
+[ 84%] Built target gmock_main
+[ 92%] Building CXX object CMakeFiles/banking_lib_test.dir/tests/banking.cc.o
+[100%] Linking CXX executable banking_lib_test
+[100%] Built target banking_lib_test
+```
+
+```shell
+./cmake-build/banking_lib_test
+```

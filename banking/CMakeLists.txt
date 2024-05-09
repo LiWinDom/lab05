@@ -23,7 +23,7 @@ FetchContent_MakeAvailable(googletest)
 
 enable_testing()
 
-add_executable(${TEST_PROJECT_NAME} ./tests/MockAccount.h ./tests/MockTransaction.h ./tests/Account.cc ./tests/Transaction.cc ${GMOCK_TESTS_SOURCE_FILES})
+add_executable(${TEST_PROJECT_NAME} ./tests/MockAccount.h ./tests/MockTransaction.h tests/banking.cc ${GMOCK_TESTS_SOURCE_FILES})
 target_link_libraries(${TEST_PROJECT_NAME} GTest::gtest_main gmock_main)
 
 include(GoogleTest)
